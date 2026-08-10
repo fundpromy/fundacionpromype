@@ -1,0 +1,999 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+    background-color: rgb(245, 245, 245);
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.3em;
+    text-align: center;
+    background-color: #D99937;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #ececec;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 1.6em;
+    text-align: justify;
+}
+
+h3 {
+    background-color: #D99937;
+    color: #ececec;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+} 
+
+h4 {
+    background-color: #333;
+    color: #ececec;
+    padding: 10px;
+    margin: 0;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*menu del encabezado*/
+.header {
+    background: #633E91;
+    color: white;
+    box-shadow: 0 0 10px rgb(36, 36, 36);
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2rems;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+} 
+
+
+.logo-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.logoname img {
+    width: auto;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu-icon img{
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation ul li {
+    display: inline-block;
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.5rem 0.5rem;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+.navigation ul li a:hover {
+    background: #D99937;
+}
+/*ajuste de contenido principal*/
+
+.main {
+    padding-top: 7rem;
+}
+
+/* seccion de noticias */
+
+.firts-news {
+    display: flex;
+    padding: 0;
+}
+
+.recent-news {
+    width: 75%;
+}
+
+/* carrusel de imagenes*/
+
+.newsslider {
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.newsslider p{
+    margin: 0;
+}
+
+.slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    margin-right: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slider p {
+    background-color: rgba(51, 51, 51, 0.829);
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    height: 370px;
+    animation: cambio 20s infinite alternate;
+    animation-timing-function: ease-out;
+    margin: 0;
+}
+
+.slider li {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
+
+.slidertext {
+    text-align: justify;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.slidertext p {
+    margin: 0;   
+}
+
+@keyframes cambio {
+    0% { margin-left: 0;}
+    25% { margin-left: 0;}
+
+    15% {margin-left: -50%;}
+    50% {margin-left: -50%;}
+
+    50% {margin-left: -100%;}
+    75% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left:-200%;}
+
+}
+
+/*noticias laterales */
+
+.lateral-news {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 25%;
+    height: fit-content;
+    margin-left: 4%;
+    padding: 10px;
+    margin-bottom: 2rem;
+}
+
+.lateral-newscards {
+    width: 100%;
+}
+
+.lateralcard {
+    background-color: #146ca0;
+    text-align: center; 
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+}
+
+.lateralcard img {
+    width: 100%;
+}
+
+.lateral-news h2 {
+    color: white;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+}
+
+.news {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 32%;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.card h4 {
+    background-color: #333;
+}
+
+/* historia */
+
+.inicio-logo {
+    text-align: center;
+}
+
+.inicio-logo img{
+    width: 30%;
+    text-align: center;
+
+}
+
+/* about us*/
+
+.mivi {
+    display: inline-block;
+    align-items: center;
+}
+
+.mision {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+    text-align: justify;
+}
+
+.vision {
+    width: 48%;
+    margin-left: 2%;
+    float: left;
+    text-align: justify;
+}
+
+.valoresbox {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.valoresbox p {
+    align-items: center;
+}
+
+.hacemos {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hacemos p {
+    text-align: center;
+}
+
+.hacemos img {
+    width: 100%;
+}
+
+/*cuadricula de hacemos*/
+
+.hacemos-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hacemos-list .card {
+    flex: 20%;
+    height: 250px;
+    border-radius: 0;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hacemos img {
+    width: 100%;
+    height: 60%;
+    margin: 0;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.hacemos h4 {
+    background-color: unset;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* fundadores */
+
+.fundadores-photos {
+    padding-bottom: 1rem;
+}
+
+.fundadores img {
+    width: 100%;
+}
+
+.firmas {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.firmas .card {
+    flex: 20%;
+    height: auto;
+    border-radius: 0;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.firmas .card img {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    border-radius: 0;
+    object-fit: cover;
+}
+
+.miembroempr {
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+}
+.miembroempr2 {
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 44%;
+
+
+}
+.miembroempr5 {
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 40%;
+
+
+}
+.miembroemprja {
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 45%;
+
+
+}
+.harisanadiv {
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 60%;
+
+
+}
+
+.negocio {
+    padding: 10px;
+    width: auto;
+    align-items: center;
+}
+
+.emprendedor {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.emprendedor ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+.emprendedor li {
+    width: 100%;
+    text-align: justify;
+}
+
+.vero h3{
+    list-style: none;
+    text-align: center;
+}
+
+.gallery-empr {
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: inherit;
+    justify-content: center;
+}
+
+.gallery-empr video {
+width: 100%;
+}
+
+.photosempr {
+    flex: 20%;
+    padding: 5px;
+}
+
+.photosempr img {
+    width: 95%;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#LR {
+    width: 50%;
+}
+
+.SR-gallery {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.SR-gallery img {
+    width: 38%;
+    margin: 5px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.music-videos {
+    width: inherit;
+}
+
+.SR-videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+
+}
+
+.SR-videos video {
+    width: 45%;
+    margin-bottom: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.VR-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    gap: 15px;
+    width: 100%;
+    height: 100%;
+    border: #146ca0 3px;
+    box-sizing: border-box;
+}
+
+.VR-gallery img {
+    width: calc(23% - 10px);
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.aj-vrgallery {
+    height: 90%;
+}
+
+.personalcardVR {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#ServMC {
+    width: 100%;
+    height: auto;
+}
+
+#ServMC img {
+    width: 50%;
+}
+
+.Tedy-gallery {
+    width: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+
+}
+
+.imgtedy {
+    width: 25%;
+    justify-content: flex-start;
+}
+
+.imgtedy img {
+    width: 100%; 
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.videostedy {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.videostedy video {
+    width: 48%;
+    padding: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+@media only screen and (max-width: 767px) {
+    
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+/*encabezado*/
+
+    .header {
+        background: #633E91;
+        color: white;
+        padding: 0.5rem 0;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .logo-nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 2%;
+    }
+
+    .logoname img {
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .menu-icon img{
+        display: block;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    
+    .navigation {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .navigation ul {
+        display: none;
+    }
+
+    .navigation ul.show {
+        display: block;
+    }
+    .navigation ul li {
+        display: block;
+        text-align: center;
+    }
+    
+    .navigation ul li a {
+        display: block;
+        padding: 0.5rem 0;
+        transition: all 0.5s;
+        border-radius: 10px;
+    }
+    
+    .navigation ul li a:hover {
+        background: #D99937;
+    }
+
+/*seccion de noticias*/
+
+    .firts-news {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    
+    .recent-news {
+        width: 100%;
+    }
+
+/* carrusel de imagenes*/
+
+    .newsslider {
+        align-items: center;
+        padding-bottom: 2rem;
+    }
+    
+    .newsslider p{
+        margin: 0;
+    }
+    
+    .slider {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+        margin-right: 1rem;
+    }
+    
+    .slider p {
+        background-color: rgba(51, 51, 51, 0.829);
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        padding: 10px;
+    
+    }
+    
+    .slider ul {
+        display: flex;
+        padding: 0;
+        width: 300%;
+        height: 300px;
+        animation: cambio 20s infinite alternate;
+        animation-timing-function: ease-out;
+        margin: 0;
+    }
+    
+    .slider li {
+        width: 100%;
+        height: 100%;
+        list-style: none;
+    }
+    
+    .slider img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .slidertext {
+        text-align: justify;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    
+    .slidertext p {
+        margin: 0;   
+    }
+    
+/*noticias laterales*/
+
+    .lateral-news {
+        width: 100%;
+        margin-left: 0;
+        overflow-x: scroll;
+    }
+    
+    .lateral-newscards {
+        width: 200%;
+        display: flex;
+    }
+    
+    .lateralcard {
+        text-align: center;
+        margin: 10px;
+    }
+    
+    .lateralcard img {
+        width: 90%;
+    }
+    
+    .lateral-news h2 {
+        text-align: left;
+        font-size: 15px;
+        margin-top: 10px;
+        padding-top: 0;
+        margin-top: 0;
+        margin-left: 10px;
+        margin-bottom: 0;
+    }    
+
+    .news {
+        width: 100%;
+        max-width: 1200px;
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        height: 580px;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        text-align: center;
+        transition: all 0.25s;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .card img {
+        width: 100%;
+        height: 220px;
+        border-radius: 10px;
+    }
+
+    .card h4 {
+        background-color: #333;
+    }
+
+/*Historia*/
+
+    .inicio-logo img {
+        width: 70%;
+        text-align: center;
+    }
+
+/* about us*/ 
+    
+    .valoresbox {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .mision {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+        text-align: justify;
+    }
+    
+    .vision {
+        width: 100%;
+        margin-left: 0;
+        float: none;
+        text-align: justify;
+    }    
+
+/* Cuadricula de hacemos*/
+
+    .hacemos {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hacemos-list {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hacemos-list .card {
+        flex: 40%;
+    }
+
+    .hacemos img {
+        width: 100%;
+        height: 60%;
+        margin: 0;
+        border-radius: 0;
+        object-fit: cover;
+    }
+
+    .hacemos h4 {
+        background-color: rgb(255, 255, 255);
+        color: #333;
+        padding-bottom: 1rem;
+    }
+
+/*fundadores*/
+
+    .firmas {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .firmas .card {
+        flex: 40%;
+    }
+
+    .firmas .card img {
+        width: 100%;
+        height: 70%;
+        margin: 0;
+        border-radius: 0;
+        object-fit: cover;
+    }
+
+    .firmas p {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #LR {
+        width: 200%;
+    }
+
+
+    #ServMC img {
+        width: 100%;
+        height: auto;
+    }
+
+/*colaboradores*/
+
+    .emprendimientos {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .negocio {
+        padding-top: 0.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .logoemp {
+        width: 100%;
+    }
+    
+    .negocio img {
+        width: 50%;
+        padding-top: 1rem;
+    }
+    
+    .vero h3{
+        list-style: none;
+        text-align: right;
+        padding-right: 11rem;
+    }
+   
+/*pie de pagina*/
+
+    .footer {
+        background: #c7c7c7;
+        padding: 1rem 0;
+        margin-top: 2rem;
+    }
+
+    .contactus ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+    }
+    
+    .contactus ul li {
+        display: block;
+        padding: 1rem 0;
+    }
+
+    .socialmedia a{
+        text-decoration: none;
+        color: rgb(34, 34, 34);
+    }
+}
+
+/* pie de pagina */
+
+.footer {
+    background: #c7c7c7;
+    padding: 4rem 0;
+    margin-top: 5rem;
+}
+.contactus ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.contactus ul li {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    text-align: center;
+}
+
+.contactus img {
+    width: 50px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    color: rgb(34, 34, 34);
+}
+
+.redescontact {
+    text-align: center;
+}
