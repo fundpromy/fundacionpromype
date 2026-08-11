@@ -759,8 +759,8 @@ width: 100%;
     }
     
     .lateral-newscards {
-        width: 200%;
-        display: flex;
+        width: 100%;
+        display: block;
     }
     
     .lateralcard {
@@ -784,7 +784,6 @@ width: 100%;
 
     .news {
         width: 100%;
-        max-width: 1200px;
         height: auto;
         display: block;
         justify-content: center;
